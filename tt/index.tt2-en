@@ -1,0 +1,18 @@
+[% META title = 'MeOnL.com'; %]
+
+<div id="searchTypes" class="hideOnLoad showWhenJS">
+	<a title="[% i18n.loc('search the web') %]" href="#" id="currentSearch"><img class="activeType" width="16px" height="16px" src="http://www.google.cz/favicon.ico"/></a>
+</div>
+<div id="searchInputBox" class="hideOnLoad">
+	<form id="searchForm" action="http://www.google.com/search" method="get">
+	<div class="submitButton">&nbsp;</div>
+	<div id="searchInputBoxInside">
+		<input id="searchInput" type="text" name="q" value=""/>
+	</div>
+	<div class="hideWhenJS">
+		<input class="submitButton" type="submit" name="submit" value="[% i18n.loc('Go') %]" />
+	</div>
+	</form>
+</div>
+<div id="searchEngines">
+</div>

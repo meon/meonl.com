@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[% lang %]" xml:lang="[% lang %]">
+<head>
+	<title>[% title %]</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="[% lang %]" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="author" content="different" />
+	<meta name="copyright" content="" />
+	<meta name="description" content="[% description %]" />
+	<meta name="keywords" content="[% keywords %]" />
+	<meta name="mssmarttagspreventparsing" content="true" />
+	<meta name="robots" content="index, follow, noarchive" />
+	<meta name="revisit-after" content="7 days" />
+	<link rel="alternate" title="MeOnL.com - news" href="http://meonl.com/news.rdf" type="application/rss+xml" />
+	<link rel="shortcut icon" href="[% content_root %]favicon.ico" />
+	<link rel="stylesheet" href="[% content_root %]css/style.css" type="text/css" media="screen" />
+	<script type="text/javascript"><!--
+		document.write('<link rel="stylesheet" href="[% content_root %]css/style-js.css" type="text/css" media="screen" />');
+	//--></script>
+	<link rel="stylesheet" href="[% content_root %]css/handheld.css" type="text/css" media="handheld" />
+</head>
+<body>
+	<div id="header">
+	<div id="header_inside">
+	<div id="headerInsideInside">
+		[% IF template.name == "index.tt2-$lang" %]
+			<div id="searchInputBox"></div>
+			<div id="searchAbout">
+				<a id="swLang" href="#"><img title="[% i18n.loc('menu - Switch language') %]" width="19px" height="19px" src="[% content_root %]img/sw-lang.png"/></a>
+				<a href="about.html"><img title="[% i18n.loc('menu - About') %]" width="19px" height="19px" src="[% content_root %]img/about.png"/></a>
+			</div>
+			<div class="contextMenu">
+				<ul>
+					<li>
+						<a href="de">
+							<img width="22px" height="15px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png" />
+							Deutsch
+						</a>
+					</li>
+					<li>
+						<a href="cs">
+							<img width="22px" height="15px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/22px-Flag_of_the_Czech_Republic.svg.png" />
+							Česky
+						</a>
+					</li>
+					<li>
+						<a href="en">
+							<img width="22px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png" />
+							English
+						</a>
+					</li>
+					<li>
+						<a href="sk">						
+							<img width="22px" height="15px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/22px-Flag_of_Slovakia.svg.png" />
+							Slovensky
+						</a>
+					</li>
+				</ul>
+			</div>
+		[% ELSE %]
+			<div id="searchInputBox">
+				<h1>[% i18n.loc('h1: MeOnLine - Search the Web') %]</h1>
+			</div>
+			<div id="searchAbout">
+				| <a href="index.html">[% i18n.loc('menu - Search') %]</a>
+			</div>
+		[% END  %]
+	</div>
+	</div>
+	</div>
+
